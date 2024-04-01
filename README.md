@@ -1,3 +1,8 @@
 # admin_dashboard
-[assets](https://pictogrammers.com/library/mdi/)
-[avatars](https://www.freepik.com/)
+
+This is an exercise project for [The Odin Project](https://www.theodinproject.com/)
+
+## Assets used
+
+* Menu icons where found on [Pictogrammers](https://pictogrammers.com/library/mdi/)
+* Avatar icons found on [Freepik](https://www.freepik.com/)
