@@ -17,7 +17,7 @@
  .container {
      height: 100vh;
      display: grid;
-     grid-template: 1fr 7fr / 1fr 5fr;
+     grid-template: 1fr 5fr / 1fr 5fr;
  }
 
  /* sidebar styles */
@@ -26,7 +26,7 @@
      background-color: var(--sidebar-color);
      grid-area: 1/1/3/2;
      display: grid;
-     grid-template-rows: 1fr 3fr 2fr;
+     grid-template-rows: 16vh 48vh 25vh;
      color: var(--sidebar-text);
      align-items: start;
      justify-items: center;
@@ -41,6 +41,8 @@
 
  .dashboard {
      align-self: center;
+     justify-self: start;
+     padding-left: var(--small-gap)
  }
 
  .dashboard img {
@@ -117,6 +119,8 @@
 
  .bottom-left img {
      grid-area: 1/1/3/2;
+     height: 68px;
+     width: auto;
  }
 
  .greet {
@@ -135,6 +139,11 @@
      grid-template-columns: repeat(3, max-content);
      justify-content: end;
      align-items: center;
+ }
+
+ .top-right>img+img {
+     height: 40px;
+     width: auto;
  }
 
  .top-right span {
@@ -168,8 +177,10 @@
  .main {
      display: grid;
      grid-template: repeat(2, 1fr)/ 4fr 1fr;
-     padding: var(--font-large);
+     padding: var(--font-medium);
      gap: var(--font-large);
+     height: 81.3vh;
+     align-items: space-between;
  }
 
  .main img {
@@ -181,7 +192,7 @@
      grid-area: 1/ 1 / 3 / 2;
      grid-template-rows: 3% 1fr;
      display: grid;
-
+     gap: var(--font-large);
 
  }
 
@@ -211,22 +222,42 @@
  .sidebars-container {
      display: grid;
      gap: var(--font-large);
+     grid-template-rows: 1fr 1fr;
  }
 
  .announcement-sidebar,
  .trending-sidebar {
      display: grid;
      grid-template-rows: 12% 1fr;
+     gap: var(--small-gap);
  }
 
  .announcements-container,
  .trending-container {
-     gap: var(--font-medium);
      border-radius: 10px;
-     padding: var(--font-medium);
+     padding: var(--font-small);
      display: grid;
      background-color: var(--sidebar-text);
      font-size: var(--font-small);
+ }
+
+ .top-card,
+ .middle-card {
+     padding-bottom: 10px;
+ }
+
+ .bottom-card,
+ .middle-card {
+     padding-top: 10px
+ }
+
+ hr {
+     color: darkgray;
+ }
+
+ .trending-container {
+     gap: var(--font-small);
+
  }
 
  h5 {
@@ -242,6 +273,8 @@
 
  .trending-card img {
      grid-area: 1/1/3/2;
+     height: 40px;
+     width: auto;
  }
 
  .trending-card>p+p {
